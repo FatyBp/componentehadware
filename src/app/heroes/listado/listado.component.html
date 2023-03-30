@@ -1,0 +1,37 @@
+<!-- <ul>
+    <li></li>
+</ul> -->
+<!-- <ol>
+    <li *ngFor="let heroe of heroes"></li>
+</ol> -->
+<!-- <ol>
+    <li *ngFor="let heroe of heroes">{{heroe}}</li>
+</ol> -->
+<!-- <ul>
+    <li *ngFor="let item of items; as myItem">{{myItem}}</li>
+</ul> -->
+
+
+
+<!-- <table border="1">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>nombre</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let usuario of usuarios">
+            <td>{{usuario.id}}</td>
+            <td>{{usuario.nombre}}</td>
+        </tr>
+    </tbody>
+</table> -->
+
+
+<ng-container *ngFor="let item of paises">
+    <br>
+    <div>{{item.title}}</div>
+    <div>{{item.descripcion}}</div>
+</ng-container>
+

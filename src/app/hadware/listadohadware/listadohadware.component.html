@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Title</title>
+</head>
+<body>
+    <h2 class="text-center mt-4">Hadware</h2>
+<div class="container">
+    <div class="row">
+      <div class="col">
+        <table class="table table-bordered border-success">
+          <thead>
+            <tr>
+              <th scope="col">nombre</th>
+              <th scope="col">marca</th>
+              <th scope="col">modelo</th>
+              <th scope="col">memoria</th>
+              <th scope="col">procesador</th>
+              <th scope="col">disco duro</th>
+            </tr>
+          </thead>
+          <tbody border>
+            <tr *ngFor="let item of hadware">
+              <td>{{item.nombre}}</td>
+              <td>{{item.marca}}</td>
+              <td>{{item.modelo}}</td>
+              <td>{{item.memoria}}</td>
+              <td>{{item.procesador}}</td>
+              <td>{{item.disco_duro}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="col">
+    <h2 class="text-center">Condiciones</h2>
+    <div  class="text-center"*ngIf="mayorEdad (18)"> Eres mayor de edad</div>
+    <div  class="text-center"*ngIf="!mayorEdad (15)"> No eres mayor de edad</div>
+  </div>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>
